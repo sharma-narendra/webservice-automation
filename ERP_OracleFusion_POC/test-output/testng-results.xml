@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="28" passed="27">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="1596532" started-at="2018-09-21T03:09:15Z" finished-at="2018-09-21T03:35:51Z">
+    <groups>
+    </groups>
+    <test name="test-number-0" duration-ms="199811" started-at="2018-09-21T03:09:15Z" finished-at="2018-09-21T03:12:34Z">
+      <class name="OCTS_USECASE_Employee.HCM_Worker_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_Worker(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_Worker_Webservice_MainClass@2e8e8ad2]" name="HCM_Worker" duration-ms="199751" started-at="2018-09-21T03:09:15Z" finished-at="2018-09-21T03:12:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_Worker -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_Worker_Webservice_MainClass@2e8e8ad2]" name="getResult" is-config="true" duration-ms="11" started-at="2018-09-21T03:12:34Z" finished-at="2018-09-21T03:12:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_Worker status=SUCCESS method=HCM_Worker_Webservice_MainClass.HCM_Worker(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_Worker_Webservice_MainClass@2e8e8ad2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_Worker_Webservice_MainClass -->
+    </test> <!-- test-number-0 -->
+    <test name="test-number-1" duration-ms="328" started-at="2018-09-21T03:12:34Z" finished-at="2018-09-21T03:12:35Z">
+      <class name="OCTS_USECASE_Employee.EmployeeNameValidation">
+        <test-method status="PASS" signature="empNameValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeNameValidation@3e37bc7f]" name="empNameValidation" duration-ms="325" started-at="2018-09-21T03:12:34Z" finished-at="2018-09-21T03:12:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empNameValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.EmployeeNameValidation@3e37bc7f]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empNameValidation status=SUCCESS method=EmployeeNameValidation.empNameValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeNameValidation@3e37bc7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.EmployeeNameValidation -->
+    </test> <!-- test-number-1 -->
+    <test name="test-number-2" duration-ms="266" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+      <class name="OCTS_USECASE_Employee.EmployeeAssignmentValidation">
+        <test-method status="PASS" signature="empAssignmentValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeAssignmentValidation@30a439d1]" name="empAssignmentValidation" duration-ms="263" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empAssignmentValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.EmployeeAssignmentValidation@30a439d1]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empAssignmentValidation status=SUCCESS method=EmployeeAssignmentValidation.empAssignmentValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeAssignmentValidation@30a439d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.EmployeeAssignmentValidation -->
+    </test> <!-- test-number-2 -->
+    <test name="test-number-3" duration-ms="127" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+      <class name="OCTS_USECASE_Employee.EmployeeBusinessUnitValidation">
+        <test-method status="PASS" signature="empBusinessUnitValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeBusinessUnitValidation@63de6e6b]" name="empBusinessUnitValidation" duration-ms="112" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empBusinessUnitValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.EmployeeBusinessUnitValidation@63de6e6b]" name="getResult" is-config="true" duration-ms="14" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empBusinessUnitValidation status=SUCCESS method=EmployeeBusinessUnitValidation.empBusinessUnitValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeBusinessUnitValidation@63de6e6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.EmployeeBusinessUnitValidation -->
+    </test> <!-- test-number-3 -->
+    <test name="test-number-4" duration-ms="127" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+      <class name="OCTS_USECASE_Employee.EmployeePayTypeValidation">
+        <test-method status="PASS" signature="empAssignmentStatusValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeePayTypeValidation@6d937845]" name="empAssignmentStatusValidation" duration-ms="125" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empAssignmentStatusValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.EmployeePayTypeValidation@6d937845]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empAssignmentStatusValidation status=SUCCESS method=EmployeePayTypeValidation.empAssignmentStatusValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeePayTypeValidation@6d937845] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.EmployeePayTypeValidation -->
+    </test> <!-- test-number-4 -->
+    <test name="test-number-5" duration-ms="131" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:36Z">
+      <class name="OCTS_USECASE_Employee.EmployeePayrollEligible">
+        <test-method status="PASS" signature="empAssignmentStatusValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeePayrollEligible@6bfa5ee]" name="empAssignmentStatusValidation" duration-ms="126" started-at="2018-09-21T03:12:35Z" finished-at="2018-09-21T03:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empAssignmentStatusValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.EmployeePayrollEligible@6bfa5ee]" name="getResult" is-config="true" duration-ms="3" started-at="2018-09-21T03:12:36Z" finished-at="2018-09-21T03:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empAssignmentStatusValidation status=SUCCESS method=EmployeePayrollEligible.empAssignmentStatusValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeePayrollEligible@6bfa5ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.EmployeePayrollEligible -->
+    </test> <!-- test-number-5 -->
+    <test name="test-number-6" duration-ms="143" started-at="2018-09-21T03:12:36Z" finished-at="2018-09-21T03:12:36Z">
+      <class name="OCTS_USECASE_Employee.EmployeeStandardHoursValidation">
+        <test-method status="PASS" signature="empAssignmentStatusValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeStandardHoursValidation@33fc3ad9]" name="empAssignmentStatusValidation" duration-ms="141" started-at="2018-09-21T03:12:36Z" finished-at="2018-09-21T03:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empAssignmentStatusValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.EmployeeStandardHoursValidation@33fc3ad9]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:12:36Z" finished-at="2018-09-21T03:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empAssignmentStatusValidation status=SUCCESS method=EmployeeStandardHoursValidation.empAssignmentStatusValidation()[pri:0, instance:OCTS_USECASE_Employee.EmployeeStandardHoursValidation@33fc3ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.EmployeeStandardHoursValidation -->
+    </test> <!-- test-number-6 -->
+    <test name="test-number-7" duration-ms="133149" started-at="2018-09-21T03:12:36Z" finished-at="2018-09-21T03:14:49Z">
+      <class name="OCTS_USECASE_Employee.HCM_BenefitGroup_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_BenefitGroup(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_BenefitGroup_Webservice_MainClass@7d860156]" name="HCM_BenefitGroup" duration-ms="133146" started-at="2018-09-21T03:12:36Z" finished-at="2018-09-21T03:14:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_BenefitGroup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_BenefitGroup_Webservice_MainClass@7d860156]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_BenefitGroup status=SUCCESS method=HCM_BenefitGroup_Webservice_MainClass.HCM_BenefitGroup(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_BenefitGroup_Webservice_MainClass@7d860156] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_BenefitGroup_Webservice_MainClass -->
+    </test> <!-- test-number-7 -->
+    <test name="test-number-8" duration-ms="198" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+      <class name="OCTS_USECASE_Employee.BenefitGroupEmployeeValidation">
+        <test-method status="PASS" signature="benefitGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.BenefitGroupEmployeeValidation@1789039d]" name="benefitGroupEmployeeValidation" duration-ms="187" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- benefitGroupEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.BenefitGroupEmployeeValidation@1789039d]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=benefitGroupEmployeeValidation status=SUCCESS method=BenefitGroupEmployeeValidation.benefitGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.BenefitGroupEmployeeValidation@1789039d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.BenefitGroupEmployeeValidation -->
+    </test> <!-- test-number-8 -->
+    <test name="test-number-9" duration-ms="104" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+      <class name="OCTS_USECASE_Employee.DeleteBenefitGroupEmployeeValidation">
+        <test-method status="PASS" signature="deleteBenefitGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteBenefitGroupEmployeeValidation@3889465b]" name="deleteBenefitGroupEmployeeValidation" duration-ms="102" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBenefitGroupEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeleteBenefitGroupEmployeeValidation@3889465b]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:14:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteBenefitGroupEmployeeValidation status=SUCCESS method=DeleteBenefitGroupEmployeeValidation.deleteBenefitGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteBenefitGroupEmployeeValidation@3889465b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.DeleteBenefitGroupEmployeeValidation -->
+    </test> <!-- test-number-9 -->
+    <test name="test-number-10" duration-ms="134416" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:17:04Z">
+      <class name="OCTS_USECASE_Employee.HCM_PersonDisability_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_PersonDisability(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_PersonDisability_Webservice_MainClass@bcc57e7]" name="HCM_PersonDisability" duration-ms="134411" started-at="2018-09-21T03:14:49Z" finished-at="2018-09-21T03:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_PersonDisability -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_PersonDisability_Webservice_MainClass@bcc57e7]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_PersonDisability status=SUCCESS method=HCM_PersonDisability_Webservice_MainClass.HCM_PersonDisability(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_PersonDisability_Webservice_MainClass@bcc57e7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_PersonDisability_Webservice_MainClass -->
+    </test> <!-- test-number-10 -->
+    <test name="test-number-11" duration-ms="204" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+      <class name="OCTS_USECASE_Employee.PersonDisabilityEmployeeValidation">
+        <test-method status="PASS" signature="personDisabilityEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.PersonDisabilityEmployeeValidation@adcc7c4]" name="personDisabilityEmployeeValidation" duration-ms="202" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personDisabilityEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.PersonDisabilityEmployeeValidation@adcc7c4]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=personDisabilityEmployeeValidation status=SUCCESS method=PersonDisabilityEmployeeValidation.personDisabilityEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.PersonDisabilityEmployeeValidation@adcc7c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.PersonDisabilityEmployeeValidation -->
+    </test> <!-- test-number-11 -->
+    <test name="test-number-12" duration-ms="59" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+      <class name="OCTS_USECASE_Employee.DeletePersonDisabilityEmployeeValidation">
+        <test-method status="PASS" signature="deletePersonDisabilityEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeletePersonDisabilityEmployeeValidation@2bc68b87]" name="deletePersonDisabilityEmployeeValidation" duration-ms="56" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePersonDisabilityEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeletePersonDisabilityEmployeeValidation@2bc68b87]" name="getResult" is-config="true" duration-ms="2" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deletePersonDisabilityEmployeeValidation status=SUCCESS method=DeletePersonDisabilityEmployeeValidation.deletePersonDisabilityEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeletePersonDisabilityEmployeeValidation@2bc68b87] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.DeletePersonDisabilityEmployeeValidation -->
+    </test> <!-- test-number-12 -->
+    <test name="test-number-13" duration-ms="135973" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:19:20Z">
+      <class name="OCTS_USECASE_Employee.HCM_Salary_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_Salary(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_Salary_Webservice_MainClass@13dc4008]" name="HCM_Salary" duration-ms="135970" started-at="2018-09-21T03:17:04Z" finished-at="2018-09-21T03:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_Salary -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_Salary_Webservice_MainClass@13dc4008]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_Salary status=SUCCESS method=HCM_Salary_Webservice_MainClass.HCM_Salary(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_Salary_Webservice_MainClass@13dc4008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_Salary_Webservice_MainClass -->
+    </test> <!-- test-number-13 -->
+    <test name="test-number-14" duration-ms="108" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+      <class name="OCTS_USECASE_Employee.SalaryEmployeeValidation">
+        <test-method status="PASS" signature="salaryEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.SalaryEmployeeValidation@4801b521]" name="salaryEmployeeValidation" duration-ms="106" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salaryEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.SalaryEmployeeValidation@4801b521]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=salaryEmployeeValidation status=SUCCESS method=SalaryEmployeeValidation.salaryEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.SalaryEmployeeValidation@4801b521] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.SalaryEmployeeValidation -->
+    </test> <!-- test-number-14 -->
+    <test name="test-number-15" duration-ms="103" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+      <class name="OCTS_USECASE_Employee.DeleteSalaryEmployeeValidation">
+        <test-method status="PASS" signature="deleteSalaryEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteSalaryEmployeeValidation@212231fb]" name="deleteSalaryEmployeeValidation" duration-ms="100" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSalaryEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeleteSalaryEmployeeValidation@212231fb]" name="getResult" is-config="true" duration-ms="2" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteSalaryEmployeeValidation status=SUCCESS method=DeleteSalaryEmployeeValidation.deleteSalaryEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteSalaryEmployeeValidation@212231fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.DeleteSalaryEmployeeValidation -->
+    </test> <!-- test-number-15 -->
+    <test name="test-number-16" duration-ms="133433" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:21:34Z">
+      <class name="OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_ScheduleAssignment(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass@73f0f05e]" name="HCM_ScheduleAssignment" duration-ms="133429" started-at="2018-09-21T03:19:20Z" finished-at="2018-09-21T03:21:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_ScheduleAssignment -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass@73f0f05e]" name="getResult" is-config="true" duration-ms="2" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_ScheduleAssignment status=SUCCESS method=HCM_ScheduleAssignment_Webservice_MainClass.HCM_ScheduleAssignment(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass@73f0f05e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass -->
+    </test> <!-- test-number-16 -->
+    <test name="test-number-17" duration-ms="319" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+      <class name="OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation">
+        <test-method status="PASS" signature="scheduleAssignmentEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@231b422a]" name="scheduleAssignmentEmployeeValidation" duration-ms="317" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scheduleAssignmentEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@231b422a]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=scheduleAssignmentEmployeeValidation status=SUCCESS method=ScheduleAssignmentEmployeeValidation.scheduleAssignmentEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@231b422a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation -->
+    </test> <!-- test-number-17 -->
+    <test name="test-number-18" duration-ms="96" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+      <class name="OCTS_USECASE_Employee.DeleteScheduleAssignmentEmployeeValidation">
+        <test-method status="PASS" signature="deleteScheduleAssignmentEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteScheduleAssignmentEmployeeValidation@4b416a74]" name="deleteScheduleAssignmentEmployeeValidation" duration-ms="95" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteScheduleAssignmentEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeleteScheduleAssignmentEmployeeValidation@4b416a74]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:21:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteScheduleAssignmentEmployeeValidation status=SUCCESS method=DeleteScheduleAssignmentEmployeeValidation.deleteScheduleAssignmentEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteScheduleAssignmentEmployeeValidation@4b416a74] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.DeleteScheduleAssignmentEmployeeValidation -->
+    </test> <!-- test-number-18 -->
+    <test name="test-number-19" duration-ms="179294" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:24:34Z">
+      <class name="OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass">
+        <test-method status="PASS" signature="HCM_TimeRecordGroup(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass@4505ea59]" name="HCM_TimeRecordGroup" duration-ms="179290" started-at="2018-09-21T03:21:34Z" finished-at="2018-09-21T03:24:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_TimeRecordGroup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass@4505ea59]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_TimeRecordGroup status=SUCCESS method=HCM_TimeRecordGroupWebservice_MainClass.HCM_TimeRecordGroup(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass@4505ea59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass -->
+    </test> <!-- test-number-19 -->
+    <test name="test-number-20" duration-ms="134" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+      <class name="OCTS_USECASE_Employee.TimeRecordGroupEmployeeValidation">
+        <test-method status="PASS" signature="timeRecordGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.TimeRecordGroupEmployeeValidation@5fc90860]" name="timeRecordGroupEmployeeValidation" duration-ms="128" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeRecordGroupEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.TimeRecordGroupEmployeeValidation@5fc90860]" name="getResult" is-config="true" duration-ms="4" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=timeRecordGroupEmployeeValidation status=SUCCESS method=TimeRecordGroupEmployeeValidation.timeRecordGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.TimeRecordGroupEmployeeValidation@5fc90860] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.TimeRecordGroupEmployeeValidation -->
+    </test> <!-- test-number-20 -->
+    <test name="test-number-21" duration-ms="61" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+      <class name="OCTS_USECASE_Employee.DeleteTimeRecordGroupEmployeeValidation">
+        <test-method status="PASS" signature="deleteTimeRecordGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteTimeRecordGroupEmployeeValidation@136342d0]" name="deleteTimeRecordGroupEmployeeValidation" duration-ms="56" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTimeRecordGroupEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeleteTimeRecordGroupEmployeeValidation@136342d0]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:24:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteTimeRecordGroupEmployeeValidation status=SUCCESS method=DeleteTimeRecordGroupEmployeeValidation.deleteTimeRecordGroupEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteTimeRecordGroupEmployeeValidation@136342d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.DeleteTimeRecordGroupEmployeeValidation -->
+    </test> <!-- test-number-21 -->
+    <test name="test-number-22" duration-ms="136881" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:26:51Z">
+      <class name="OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_AssignedPayroll(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass@67ff1402]" name="HCM_AssignedPayroll" duration-ms="136878" started-at="2018-09-21T03:24:34Z" finished-at="2018-09-21T03:26:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_AssignedPayroll -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass@67ff1402]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_AssignedPayroll status=SUCCESS method=HCM_AssignedPayroll_Webservice_MainClass.HCM_AssignedPayroll(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass@67ff1402] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass -->
+    </test> <!-- test-number-22 -->
+    <test name="test-number-23" duration-ms="60" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+      <class name="OCTS_USECASE_Employee.AssignedPayrollEmployeeValidation">
+        <test-method status="PASS" signature="assignedPayrollEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.AssignedPayrollEmployeeValidation@1e876545]" name="assignedPayrollEmployeeValidation" duration-ms="58" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignedPayrollEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.AssignedPayrollEmployeeValidation@1e876545]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assignedPayrollEmployeeValidation status=SUCCESS method=AssignedPayrollEmployeeValidation.assignedPayrollEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.AssignedPayrollEmployeeValidation@1e876545] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.AssignedPayrollEmployeeValidation -->
+    </test> <!-- test-number-23 -->
+    <test name="test-number-24" duration-ms="65" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+      <class name="OCTS_USECASE_Employee.DeleteAssignedPayrollEmployeeValidation">
+        <test-method status="PASS" signature="deleteAssignedPayrollEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteAssignedPayrollEmployeeValidation@2bd49edd]" name="deleteAssignedPayrollEmployeeValidation" duration-ms="63" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAssignedPayrollEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeleteAssignedPayrollEmployeeValidation@2bd49edd]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:26:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteAssignedPayrollEmployeeValidation status=SUCCESS method=DeleteAssignedPayrollEmployeeValidation.deleteAssignedPayrollEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeleteAssignedPayrollEmployeeValidation@2bd49edd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.DeleteAssignedPayrollEmployeeValidation -->
+    </test> <!-- test-number-24 -->
+    <test name="test-number-25" duration-ms="540102" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:35:51Z">
+      <class name="OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass">
+        <test-method status="FAIL" signature="HCM_PersonAbsence(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass@74748c73]" name="HCM_PersonAbsence" duration-ms="540089" started-at="2018-09-21T03:26:51Z" finished-at="2018-09-21T03:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\Worker.zip]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Error: Job not loaded successfully.Please check the error in the application]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Error: Job not loaded successfully.Please check the error in the application
+at OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass.HCM_PersonAbsence(HCM_PersonAbsence_Webservice_MainClass.java:456)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+at OCTS_UI.FXMLController$1.call(FXMLController.java:580)
+at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_PersonAbsence -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass@74748c73]" name="getResult" is-config="true" duration-ms="7" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_PersonAbsence status=FAILURE method=HCM_PersonAbsence_Webservice_MainClass.HCM_PersonAbsence(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass@74748c73] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass -->
+    </test> <!-- test-number-25 -->
+    <test name="test-number-26" duration-ms="38" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+      <class name="OCTS_USECASE_Employee.PersonAbsenceEmployeeValidation">
+        <test-method status="PASS" signature="personAbsenceEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.PersonAbsenceEmployeeValidation@152ef196]" name="personAbsenceEmployeeValidation" duration-ms="38" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personAbsenceEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.PersonAbsenceEmployeeValidation@152ef196]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=personAbsenceEmployeeValidation status=SUCCESS method=PersonAbsenceEmployeeValidation.personAbsenceEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.PersonAbsenceEmployeeValidation@152ef196] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_USECASE_Employee.PersonAbsenceEmployeeValidation -->
+    </test> <!-- test-number-26 -->
+    <test name="test-number-27" duration-ms="19" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+      <class name="OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation@18cd9a26]" name="setUp" is-config="true" duration-ms="238" started-at="2018-09-21T03:09:14Z" finished-at="2018-09-21T03:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deletePersonAbsenceEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation@18cd9a26]" name="deletePersonAbsenceEmployeeValidation" duration-ms="19" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePersonAbsenceEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation@18cd9a26]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deletePersonAbsenceEmployeeValidation status=SUCCESS method=DeletePersonAbsenceEmployeeValidation.deletePersonAbsenceEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation@18cd9a26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation@18cd9a26]" name="tearDown" is-config="true" duration-ms="355" started-at="2018-09-21T03:35:51Z" finished-at="2018-09-21T03:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- OCTS_USECASE_Employee.DeletePersonAbsenceEmployeeValidation -->
+    </test> <!-- test-number-27 -->
+  </suite> <!-- Default Suite -->
+</testng-results>
