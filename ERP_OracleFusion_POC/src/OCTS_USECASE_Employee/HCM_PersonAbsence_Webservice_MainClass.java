@@ -38,6 +38,7 @@ import Common_Utility.Details;
 import Common_Utility.ERP_getImportandLoadStatus;
 import Common_Utility.ERP_utilDecodeBase;
 import Common_Utility.Logger;
+import Common_Utility.PrerequisiteDatToExcel;
 import Common_Utility.ReporterBaseTest;
 import OCTS_Automation_Main_Modules.ReadERPFinance_InputDataSheet;
 import OCTS_Automation_Main_Modules.UnzipOutputFileGenerated;
@@ -142,6 +143,13 @@ public class HCM_PersonAbsence_Webservice_MainClass extends ReporterBaseTest {
 			//GIfile_fp = "C:\\Users\\koushik\\Documents\\Oracle Fusion\\GlInterface.zip";
 			inputfile_fp = "C:\\Automation_OCTS\\Data\\InputDataSheet\\HCM_PersonAbsenceEntry_InputDatasheet.XLSX";
 			file_fp = "C:\\Automation_OCTS\\Data\\DAT\\PersonAbsenceEntry.zip";
+
+
+			 //Code to convert dat file into excel
+			 String Filepath="C:\\Automation_OCTS\\Data\\DAT\\PersonAbsenceEntry.dat";
+			 String FileNameOutputTestData="C:\\Automation_OCTS\\Output\\PersonAbsenceEntryTestData.xlsx";
+			 PrerequisiteDatToExcel pde=new PrerequisiteDatToExcel();
+				pde.readTextFile(Filepath,FileNameOutputTestData);
 
 			boolean booleanstatus=true;
 		 System.out.println(inputfile_fp);

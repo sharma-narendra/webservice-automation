@@ -17,8 +17,10 @@ public class PrerequisiteDatToExcel {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		PrerequisiteDatToExcel pde=new PrerequisiteDatToExcel();
-		pde.readTextFile("","");
+		 String Filepath="C:\\Automation_OCTS\\Data\\DAT\\Worker.dat";
+		 String FileNameOutputTestData="C:\\Automation_OCTS\\Output\\WorkerTestData.xlsx";
+		 PrerequisiteDatToExcel pde=new PrerequisiteDatToExcel();
+			pde.readTextFile(Filepath,FileNameOutputTestData);
 
 
 	}

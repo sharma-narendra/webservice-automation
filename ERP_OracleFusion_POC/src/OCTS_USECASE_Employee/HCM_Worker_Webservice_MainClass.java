@@ -38,6 +38,7 @@ import Common_Utility.Details;
 import Common_Utility.ERP_getImportandLoadStatus;
 import Common_Utility.ERP_utilDecodeBase;
 import Common_Utility.Logger;
+import Common_Utility.PrerequisiteDatToExcel;
 import Common_Utility.ReporterBaseTest;
 import OCTS_Automation_Main_Modules.ReadERPFinance_InputDataSheet;
 import OCTS_Automation_Main_Modules.UnzipOutputFileGenerated;
@@ -145,9 +146,18 @@ public class HCM_Worker_Webservice_MainClass extends ReporterBaseTest {
 		 System.out.println(file_fp);
 		 HCMInputDataFile=inputfile_fp;
 		 System.out.println(HCMInputDataFile);
+
+		 //Code to convert dat file into excel
+		 String Filepath="C:\\Automation_OCTS\\Data\\DAT\\Worker.dat";
+		 String FileNameOutputTestData="C:\\Automation_OCTS\\Output\\WorkerTestData.xlsx";
+		 PrerequisiteDatToExcel pde=new PrerequisiteDatToExcel();
+			pde.readTextFile(Filepath,FileNameOutputTestData);
+
+
 		/*
          * Code to read input data file
          */
+
 
 		 test = extent.createTest("Testing HCM Worker Uploads");
 		 System.out.println("after create test");
