@@ -1,60 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default Suite]">
-  <test thread-count="5" name="test-number-16(failed)">
+  <test thread-count="5" name="test-number-1(failed)">
     <parameter name="testFile" value="C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx"/>
-    <parameter name="InterfaceFile" value="C:\Automation_OCTS\Data\DAT\Worker.zip"/>
+    <parameter name="InterfaceFile" value="C:\Automation_OCTS\Data\DAT\Worker.dat"/>
     <classes>
-      <class name="OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass">
+      <class name="OCTS_USECASE_Employee.ProcessLifeEvent">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="HCM_ScheduleAssignment" invocation-numbers="0"/>
+          <include name="PersonLifeEventvalidation"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass -->
+      </class> <!-- OCTS_USECASE_Employee.ProcessLifeEvent -->
     </classes>
-  </test> <!-- test-number-16(failed) -->
-  <test thread-count="5" name="test-number-19(failed)">
-    <parameter name="testFile" value="C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx"/>
-    <parameter name="InterfaceFile" value="C:\Automation_OCTS\Data\DAT\Worker.zip"/>
-    <classes>
-      <class name="OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="HCM_TimeRecordGroup" invocation-numbers="0"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- OCTS_USECASE_Employee.HCM_TimeRecordGroupWebservice_MainClass -->
-    </classes>
-  </test> <!-- test-number-19(failed) -->
-  <test thread-count="5" name="test-number-22(failed)">
-    <parameter name="testFile" value="C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx"/>
-    <parameter name="InterfaceFile" value="C:\Automation_OCTS\Data\DAT\Worker.zip"/>
-    <classes>
-      <class name="OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="HCM_AssignedPayroll" invocation-numbers="0"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- OCTS_USECASE_Employee.HCM_AssignedPayroll_Webservice_MainClass -->
-    </classes>
-  </test> <!-- test-number-22(failed) -->
-  <test thread-count="5" name="test-number-25(failed)">
-    <parameter name="testFile" value="C:\Automation_OCTS\Data\InputDataSheet\ERP_HCM_Worker_InputDatasheet.xlsx"/>
-    <parameter name="InterfaceFile" value="C:\Automation_OCTS\Data\DAT\Worker.zip"/>
-    <classes>
-      <class name="OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="HCM_PersonAbsence" invocation-numbers="0"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- OCTS_USECASE_Employee.HCM_PersonAbsence_Webservice_MainClass -->
-    </classes>
-  </test> <!-- test-number-25(failed) -->
+  </test> <!-- test-number-1(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

@@ -47,11 +47,6 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-import Common_Utility.CommonUtilFunctions;
-import Common_Utility.Details;
-import Common_Utility.ERP_utilDecodeBase;
-import Common_Utility.Logger;
-import Common_Utility.ReporterBaseTest;
 import OCTS_Automation_Main_Modules.ReadERPFinance_InputDataSheet;
 import OCTS_Automation_Main_Modules.UnzipOutputFileGenerated;
 
@@ -67,19 +62,19 @@ import org.testng.*;
 
 public class TerminateEmployee extends ReporterBaseTest {
 
+	/*
 	public static void main(String[] args) {
 		TerminateEmployee empVal = new TerminateEmployee();
-		empVal.terminateEmployeevalidation();
+		empVal.TerminateEmployeeMain();
 	}
-
-
+*/
 
 	@Test
 	public void terminateEmployeevalidation() {
 		TerminateEmployee terminateEmp = new TerminateEmployee();
 
-		test=extent.createTest("Termination Employee");
-		System.out.println("\n Termination Employee \n");
+		test=extent.createTest("HCM - Terminate Employee");
+		System.out.println("Termination Employee");
 		terminateEmp.TerminateEmployeeMain();
 	}
 
@@ -88,25 +83,26 @@ public class TerminateEmployee extends ReporterBaseTest {
 
 	{
 
+		//	Assert.assertTrue(true);
+		Xls_Reader XL ;
+		XL = new Xls_Reader("C:\\Automation_OCTS\\Data\\LoginDetails.xlsx");
+
+		String Username = XL.getCellData("LaunchApplication", "UserName", 4);
+		String Pwd =XL.getCellData("LaunchApplication", "Password", 4);
+		String URL = XL.getCellData("LaunchApplication", "URL", 4);
+	    String Pnum = null;
+
+			//System.setProperty("webdriver.chrome.driver","C:\\Automation_OCTS\\Driver\\chromedriver.exe");
+
+	    System.setProperty("webdriver.chrome.driver","C:\\Automation_OCTS\\Driver\\chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
+
+			 Common_Utility.ReporterBaseTest.test.log(Status.INFO, "User Name :"+Username);
+			 Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Environment URL :" +URL);
+
+			 Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Application is Launched Successfully "+"\n");
 
 
-
-			Assert.assertTrue(true);
-
-			System.setProperty("webdriver.chrome.driver","C:\\Automation_OCTS\\Driver\\chromedriver.exe");
-			WebDriver driver = new ChromeDriver();
-			String Username = "Fusion.user";
-			String Pwd ="Welcome.2017";
-			String URL = "https://ecqg-test.login.us2.oraclecloud.com";
-			String Pnum = "STUDENT1_PERSON520" ;
-
-
-		/*	 logger.log(LogStatus.INFO, "User Name :"+Username);
-			 logger.log(LogStatus.INFO, "Environment URL :" +URL);
-
-			 logger.log(LogStatus.PASS, "Application is Launched Successfully ");
-
-*/
 	        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 	        driver.navigate().to(URL);
 	        System.out.println( driver.getCurrentUrl());
@@ -121,44 +117,40 @@ public class TerminateEmployee extends ReporterBaseTest {
 
 	        driver.findElement(By.id("btnActive")).click();
 
-
-
 	      //Click on the navigator Icon
 	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	        try {
 	        if (driver.findElement(By.id("pt1:_UIShome::icon")).isDisplayed())
 	        {
-	        	/*logger.log(LogStatus.PASS, "Application is logged in Successfully for the user "+Username );
-
-	        	  logger.log(LogStatus.INFO, "Home Icon is clicked ");*/
+	        	Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Application is logged in Successfully for the user "+ Username );
 
 	            	driver.findElement(By.id("pt1:_UIShome::icon")).click();
 	            	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-	       /*     	logger.log(LogStatus.INFO, "Home Icon is clicked ");*/
+	          	Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Home Icon is clicked "+"\n");
 				}
 
 	        else {
-	        /*	logger.log(LogStatus.FAIL, "Application is not Invoked ");*/
+	        Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Application is not Invoked "+"\n");
 	            } }
 	        catch (TimeoutException e) {
 
-	        	/*logger.log(LogStatus.FAIL, "Application is not Invoked, Time out ");*/
+	        	Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Application is not Invoked, Time out "+"\n");
 			}
 
 	    	driver.findElement(By.id("pt1:_UISmmLink::icon")).click();
 
-	    	/*logger.log(LogStatus.INFO, "Navigator Icon is clicked ");
+	    	Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Navigator Icon is clicked "+"\n");
 
-*/	    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+         	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	       // driver.findElement(By.linkText("Show More")).click();
 
-	     //   logger.log(LogStatus.INFO, "My Client Group Icon is clicked ");
+	         Common_Utility.ReporterBaseTest.test.log(Status.INFO, "My Client Group Icon is clicked "+"\n");
 
 	    	driver.findElement(By.linkText("My Client Groups")).click();
 	    	//driver.findElement(By.id("pt1:nv_itemNode_workforce_management_person_management")).click();
 
-	    	//logger.log(LogStatus.INFO, "Person Management Link is clicked ");
+	    	Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Person Management Link is clicked "+"\n");
 
 	    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
@@ -166,168 +158,203 @@ public class TerminateEmployee extends ReporterBaseTest {
 
 	    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-	    	try
-	    	{
 
-	    		driver.findElement(By.xpath("//input[starts-with(@name,'_FOpt1:_FOr1:0:_FONSr2:0:MAt1:0:pt1:Perso1:0:SP3:q1:value10')]")).sendKeys(Pnum);
+	    	try {
 
-		    //	logger.log(LogStatus.INFO, "Person Number : "+ Pnum  +" is Entered ");
+				XL = new Xls_Reader("C:\\Automation_OCTS\\Data\\InputDataSheet\\HCM_GUI_TerminateEmp.xlsx");
+				String ColName = "PersonNumber";
+				String SheetName = "Sheet1";
+				int Rows = XL.getRowCount(SheetName);
+				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+				Common_Utility.ReporterBaseTest.test.log(Status.INFO,"No of Workers to be Terminated");
 
-	    	 }catch (Exception e) {
+		for ( int i = 2; i <=Rows ; i++)
+		{
 
-	    	//	 logger.log(LogStatus.INFO, "Person Number : "+ Pnum  +" is not Entered ");
-	    			}
+			Pnum =	XL.getCellData(SheetName, ColName, i);
+		    driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+			System.out.println(Pnum);
+			Common_Utility.ReporterBaseTest.test.log(Status.INFO,"**** Terminating Employee with Person Number : "+Pnum +"****" );
+			TerminateAction(driver, Pnum);
+			driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+			driver.close();
 
-	        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		}
 
-	        driver.findElement(By.xpath("//*[@id=\"_FOpt1:_FOr1:0:_FONSr2:0:MAt1:0:pt1:Perso1:0:SP3:q1::search\"]")).click();
+	}catch(Exception e)
+	{
 
-	  //      logger.log(LogStatus.INFO, "Search Button is clicked");
+		e.printStackTrace();
+	}
 
-	        driver.manage().timeouts().implicitlyWait(15 , TimeUnit.SECONDS);
+}
+
+//********************************************************************************************
+	public void TerminateAction( WebDriver driver,String Pnum) {
 
 
-	        WebElement Perlink =  driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt1:0:pt1:Perso1:0:SP3:table1:_ATp:table2:0:gl1"));
+	try
+    	{
+    		driver.findElement(By.xpath("//input[starts-with(@name,'_FOpt1:_FOr1:0:_FONSr2:0:MAt1:0:pt1:Perso1:0:SP3:q1:value10')]")).sendKeys(Pnum);
 
-	        try
+	        Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Person Number : "+ Pnum  +" is Entered "+"\n");
+
+    	 }catch (Exception e) {
+
+    	     Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Person Number : "+ Pnum  +" is not Entered "+"\n");
+    			}
+
+        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+
+        driver.findElement(By.xpath("//*[@id=\"_FOpt1:_FOr1:0:_FONSr2:0:MAt1:0:pt1:Perso1:0:SP3:q1::search\"]")).click();
+
+        Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Search Button is clicked"+"\n");
+
+        driver.manage().timeouts().implicitlyWait(15 , TimeUnit.SECONDS);
+
+
+        WebElement Perlink =  driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt1:0:pt1:Perso1:0:SP3:table1:_ATp:table2:0:gl1"));
+
+        try
+        {
+        	if (Perlink.isDisplayed())
 	        {
-	        	if (Perlink.isDisplayed())
-		        {
-	      ///  		logger.log(LogStatus.PASS, "Person is available ");
-		        	Perlink.click();
-		        	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		        }
-
-	        }catch (Exception e) {
-
-	        //	 logger.log(LogStatus.FAIL, "Person is not available ");
-
-	        }
-
-
-	        try
-	        {
-
+            	Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Person is available "+"\n");
+	        	Perlink.click();
 	        	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-	   //         logger.log(LogStatus.PASS,"Task Icon is Clicked ");
-
-		    	//click on tasks icon
-		    	driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:_FOTsdiHcmIntWaTasksId::icon")).click();
-
-		    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-	        } catch (Exception e) {
-
-	    //        logger.log(LogStatus.FAIL,"Task Icon is not available ");
-
 	        }
 
+        }catch (Exception e) {
+
+         Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Person is not available "+"\n");
+
+        }
 
 
-	    	if (driver.findElement(By.xpath("//*[contains(@id,'_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:RAtl22')]")).isDisplayed())
-	    	{
-	    		System.out.println("manage wrk relation ship link displayed");
-	    		try {
+        try
+        {
 
-		    		driver.findElement(By.linkText("Manage Work Relationship")).click();
-		    		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//			logger.log(LogStatus.INFO, "Manage Work Relationship Link is Clicked");
+        	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-			///		logger.log(LogStatus.FAIL, "Manage Work Relationship Link is not Clicked");
-					e.printStackTrace();
-				}
+            Common_Utility.ReporterBaseTest.test.log(Status.PASS,"Task Icon is Clicked "+"\n");
 
-	    	}
-
-	    	//click drop down icon
-
-	    	try {
-	  ///  		logger.log(LogStatus.INFO, "Actions Link is Clicked");
-				driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:pt1:r1:0:pt1:SP1:edit::popArea")).click();
-				driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-	//			logger.log(LogStatus.FAIL, "Actions Link is not Clicked");
-				e.printStackTrace();
-			}
-
-	    	//click drop down icon
-
-	    	try {
-
-				driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:pt1:r1:0:pt1:SP1:tBtn')]")).click();
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    	} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-
-	    //click Terminate
-
-	    	try {
-	  //  		logger.log(LogStatus.PASS, "Terminate option is Selected");
-				driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:submit")).click();
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			} catch (Exception e) {
-
-	//			logger.log(LogStatus.FAIL, "Terminate option is not clicked");
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-	    //click Save
-
-	    	try {
-	    		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-	  ///  		logger.log(LogStatus.INFO, "Resignation is saved");
-
-				driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:save')]/table/tbody/tr")).click();
-				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-	    	} catch (Exception e) {
-	//    		logger.log(LogStatus.FAIL, "Resignation is not saved");
-
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+	    	//click on tasks icon
+	    	driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:_FOTsdiHcmIntWaTasksId::icon")).click();
 
 	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-	    	WebElement Okbtn = driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog')]"));
+        } catch (Exception e) {
 
-	    	Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee Terminated  successfully.."+"\n");
-	    	Logger.logInfo(TerminateEmployee.class, "Employee Terminated  successfully...."+"\n");
-	    	//WebElement Okbtn = driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog"));
+          Common_Utility.ReporterBaseTest.test.log(Status.FAIL,"Task Icon is not available "+"\n");
 
-	    	if (Okbtn.isDisplayed())
+        }
+
+
+    	if (driver.findElement(By.xpath("//*[contains(@id,'_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:RAtl22')]")).isDisplayed())
+    	{
+    		System.out.println("manage wrk relation ship link displayed"+"\n");
+    		try {
+
+	    		driver.findElement(By.linkText("Manage Work Relationship")).click();
+	    		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Manage Work Relationship Link is Clicked"+"\n");
+
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+		Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Manage Work Relationship Link is not Clicked"+"\n");
+				e.printStackTrace();
+			}
+
+    	}
+
+    	//click drop down icon
+
+    	try {
+            Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Actions Link is Clicked"+"\n");
+			driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:pt1:r1:0:pt1:SP1:edit::popArea")).click();
+			driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+            Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Actions Link is not Clicked"+"\n");
+			e.printStackTrace();
+		}
+
+    	//click drop down icon
+
+    	try {
+
+			driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:pt1:r1:0:pt1:SP1:tBtn')]")).click();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    	} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+    //click Terminate
+
+    	try {
+           Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Terminate option is Selected"+"\n");
+			driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:submit")).click();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		} catch (Exception e) {
+
+            Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Terminate option is not clicked"+"\n");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    //click Save
+
+    	try {
+    		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+            Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Resignation is saved"+"\n");
+
+			driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:save')]/table/tbody/tr")).click();
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+    	} catch (Exception e) {
+        Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Resignation is not saved"+"\n");
+
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+    	WebElement Okbtn = driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog')]"));
+
+    	Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee Terminated  successfully.."+"\n"+"\n");
+    	Logger.logInfo(TerminateEmployee.class, "Employee Terminated  successfully...."+"\n"+"\n");
+    	//WebElement Okbtn = driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog"));
+
+    	if (Okbtn.isDisplayed())
+    	{
+    		try
 	    	{
-	    		try
-		    	{
-		    		//driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog")).click();
+	    		//driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog")).click();
 
-	    			Okbtn.click();
+    			Okbtn.click();
 
-		    		//driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog')]")).click();
-		///    		logger.log(LogStatus.PASS, "Employee is terminated");
-		    	}
-
-		    	catch (Exception e) {
-
-		//    		logger.log(LogStatus.FAIL, "Employee is not terminated");
-		    	}
-
+	    		//driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog')]")).click();
+	 		Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee is terminated"+"\n");
 	    	}
 
+	    	catch (Exception e) {
 
-	}
+         	Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Employee is not terminated"+"\n");
+	    	}
 
-
+    	}
 
 
 }
+
+
+
+
+
+
+	}
