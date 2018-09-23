@@ -42,6 +42,7 @@ import Common_Utility.PrerequisiteDatToExcel;
 import Common_Utility.ReporterBaseTest;
 import OCTS_Automation_Main_Modules.ReadERPFinance_InputDataSheet;
 import OCTS_Automation_Main_Modules.UnzipOutputFileGenerated;
+import OCTS_UI.FXMLController;
 
 
 
@@ -49,6 +50,7 @@ import OCTS_Automation_Main_Modules.UnzipOutputFileGenerated;
 @SuppressWarnings("unused")
 public class HCM_AssignedPayroll_Webservice_MainClass extends ReporterBaseTest {
 	//String zipFilePath = "C:\\Automation_OCTS\\Output\\71963.zip";
+	 public static Boolean assignedStatus=false;
 	public static String zipFilePath;
 	public static String HCMInputDataFile;
     static String destDir = "C:\\Automation_OCTS\\Output\\";
@@ -161,6 +163,7 @@ public class HCM_AssignedPayroll_Webservice_MainClass extends ReporterBaseTest {
          */
 
 		 test = extent.createTest("Testing HCM Assigned Payroll Uploads");
+
 		 System.out.println("after create test");
 
            try {
@@ -465,6 +468,7 @@ public class HCM_AssignedPayroll_Webservice_MainClass extends ReporterBaseTest {
 							}else {
 								test.log(Status.PASS, "Step 6: Importing and Loading Job Status Successful" );
 								   Logger.logInfo(HCM_PersonDisability_Webservice_MainClass.class,"Step 6: Load Import Job Status Successful" );
+								   assignedStatus=true;
 							}
 
 					}

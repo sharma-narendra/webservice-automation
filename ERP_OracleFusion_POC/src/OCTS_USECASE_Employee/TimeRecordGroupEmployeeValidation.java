@@ -18,65 +18,41 @@ import OCTS_Automation_Main_Modules.*;
 @SuppressWarnings("unused")
 public class TimeRecordGroupEmployeeValidation extends ReporterBaseTest{
 
-	static String workerTestDataPath = "C:\\Automation_OCTS\\Output\\PersonDisabilityTestData.xlsx";
-	static String personDisabilityDatTestDataPath ="C:\\Automation_OCTS\\Data\\PersonDisability.dat";
-	static HashMap<Integer, Cell> firstName = new HashMap<Integer, Cell>();
-	static HashMap<Integer, Cell> lastName = new HashMap<Integer, Cell>();
-	static String workerFirstNameCol = "DisabilityCode";
-	static String workerLastNameCol = "PersonNumber";
-	static String actualEmpName = "Rob, Morgan";
-	static String trimActualEmpName = actualEmpName.replace(" ","");
-	static String expectedEmpName ="";
-	String txt2excel;
+	static String TestDataPath = "C:\\Automation_OCTS\\Output\\TimeRecordGroupTestData.xlsx";
 
-	static HashMap<Object,Cell> empName = new HashMap<Object, Cell>();
 	int flag = 0;
+	String Param1, Param2,Param3,Param4,Param5, Param6;
 
 	public void getFirstAndLastName() {
-	//	TextToExcel tte = new TextToExcel();
-	//	txt2excel = tte.readTextFile(personDisabilityDatTestDataPath);
 
-
-		ReadHCMWorker_InputDataSheet workerFile = new ReadHCMWorker_InputDataSheet();
 
 		try {
-			firstName = workerFile.parseWorkerExcel(workerTestDataPath,workerFirstNameCol);
-			lastName = workerFile.parseWorkerExcel(workerTestDataPath,workerLastNameCol);
-			for (Map.Entry<Integer, Cell> fName : firstName.entrySet()) {
-				for (Map.Entry<Integer, Cell> lName : lastName.entrySet()) {
-					if (fName.getKey().equals(lName.getKey())) {
-						empName.put(fName.getValue(),lName.getValue());
-					}
-				}
-			}
-			for (Map.Entry<Object, Cell> editEmpName : empName.entrySet()){
-				expectedEmpName = editEmpName.getKey() +","+editEmpName.getValue();
-				Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Time Record Group  :  added to the Employee : "+ editEmpName.getValue() +" successfully.."+"\n");
-				flag=1;
-				//break;
-			/*	if(expectedEmpName.equals(trimActualEmpName))
-				{
-					flag=1;
-					break;
-				}
-				*/
-			}
+		Xls_Reader objReader= new Xls_Reader(TestDataPath);
+		 Param1 = objReader.getCellData("Header", "PersonNumber",2);
+		 Param2 =objReader.getCellData("Header", "AssignmentNumber",2);
+		 Param3 = objReader.getCellData("Header", "TcStartTime",2);
+		 Param4 = objReader.getCellData("Header", "TcStopTime",2);
+	//	 Param5 =objReader.getCellData("Header", "AssignmentNumber",2);
+		// Param6 = objReader.getCellData("Header", "PayrollId",2);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		if(flag == 1)
+		if(!Param2.equals(""))
 		{
-			System.out.println("Time Record Group : "+ expectedEmpName + "" + " added to the employee successfully.");
-			//Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Benefit Group : "+ expectedEmpName + "" + " added to the employee successfully.."+"\n");
-			Logger.logInfo(TimeRecordGroupEmployeeValidation.class, "Time Record Group : "+ expectedEmpName + "" + " added to the employee successfully.."+"\n");
-		}
-		if(flag == 0)
+			//System.out.println("Assigned Payroll : "+ expectedEmpName + "" + " added to the employee successfully.");
+			Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Time Record Group : for the period Start Time "+Param3+" - Stop Time "+Param4+"   have been updated  to the Employee: "+Param1+" Assignment: "+Param2+" successfully.."+"\n");
+			//Logger.logInfo(AssignedPayrollEmployeeValidation.class, "Assigned Payroll : "+ expectedEmpName + "" + " added to the employee successfully.."+"\n");
+		}else
+
 		{
-			System.out.println("Time Record Group : "+ expectedEmpName + "" + " not added to the employee.");
-			Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Time Record Group : "+ expectedEmpName + "" + " not added to the employee." +"\n");
-			Logger.logError(TimeRecordGroupEmployeeValidation.class, "Time Record Group : "+ expectedEmpName + "" + " not added to the employee." +"\n");
+		//	System.out.println("Assigned Payroll : "+ expectedEmpName + "" + " not added to the employee.");
+			//Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Assigned Payroll : "+ expectedEmpName + "" + " not added to the employee." +"\n");
+		//	Logger.logError(AssignedPayrollEmployeeValidation.class, "Assigned Payroll : "+ expectedEmpName + "" + " not added to the employee." +"\n");
+
+			Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Data not available in the datasheet");
+
 		}
 
 	}
@@ -84,10 +60,17 @@ public class TimeRecordGroupEmployeeValidation extends ReporterBaseTest{
 	@Test
 	public void timeRecordGroupEmployeeValidation() {
 		TimeRecordGroupEmployeeValidation empVal = new TimeRecordGroupEmployeeValidation();
-		System.out.println(workerTestDataPath);
+		//System.out.println(workerTestDataPath);
 		test=extent.createTest("Time Record Group association with Employee Validation");
 		System.out.println("\n Time Record Group association with Employee Validation \n");
-		empVal.getFirstAndLastName();
+
+
+		if(HCM_TimeRecordGroupWebservice_MainClass.timeRecordStatus) {
+			empVal.getFirstAndLastName();
+			}else {
+				Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Time Record Group not assigned with Employee successfully");
+			}
+
 	}
 
 	//Commenting the below code; if required to test this code alone then uncomment the code

@@ -1,74 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="234060" started-at="2018-09-22T06:49:31Z" finished-at="2018-09-22T06:53:25Z">
+  <suite name="Default Suite" duration-ms="141129" started-at="2018-09-23T06:24:53Z" finished-at="2018-09-23T06:27:14Z">
     <groups>
     </groups>
-    <test name="test-number-0" duration-ms="95847" started-at="2018-09-22T06:49:31Z" finished-at="2018-09-22T06:51:07Z">
-      <class name="OCTS_USECASE_Employee.PersonLifeEvent">
-        <test-method status="PASS" signature="PersonLifeEventvalidation()[pri:0, instance:OCTS_USECASE_Employee.PersonLifeEvent@79e84ed0]" name="PersonLifeEventvalidation" duration-ms="95742" started-at="2018-09-22T06:49:31Z" finished-at="2018-09-22T06:51:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PersonLifeEventvalidation -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.PersonLifeEvent@79e84ed0]" name="getResult" is-config="true" duration-ms="18" started-at="2018-09-22T06:51:07Z" finished-at="2018-09-22T06:51:07Z">
+    <test name="test-number-0" duration-ms="140759" started-at="2018-09-23T06:24:53Z" finished-at="2018-09-23T06:27:13Z">
+      <class name="OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass">
+        <test-method status="PASS" signature="HCM_ScheduleAssignment(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass@52b89118]" name="HCM_ScheduleAssignment" duration-ms="140659" started-at="2018-09-23T06:24:53Z" finished-at="2018-09-23T06:27:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PersonLifeEventvalidation status=SUCCESS method=PersonLifeEvent.PersonLifeEventvalidation()[pri:0, instance:OCTS_USECASE_Employee.PersonLifeEvent@79e84ed0] output={null}]]]>
+                <![CDATA[C:\Automation_OCTS\Data\InputDataSheet\HCM_PersonAbsenceEntry_InputDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\DAT\ScheduleAssignment.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HCM_ScheduleAssignment -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass@52b89118]" name="getResult" is-config="true" duration-ms="15" started-at="2018-09-23T06:27:13Z" finished-at="2018-09-23T06:27:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HCM_ScheduleAssignment status=SUCCESS method=HCM_ScheduleAssignment_Webservice_MainClass.HCM_ScheduleAssignment(java.lang.String, java.lang.String)[pri:0, instance:OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass@52b89118] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- OCTS_USECASE_Employee.PersonLifeEvent -->
+      </class> <!-- OCTS_USECASE_Employee.HCM_ScheduleAssignment_Webservice_MainClass -->
     </test> <!-- test-number-0 -->
-    <test name="test-number-1" duration-ms="91512" started-at="2018-09-22T06:51:07Z" finished-at="2018-09-22T06:52:39Z">
-      <class name="OCTS_USECASE_Employee.ProcessLifeEvent">
-        <test-method status="PASS" signature="PersonLifeEventvalidation()[pri:0, instance:OCTS_USECASE_Employee.ProcessLifeEvent@343f7d6b]" name="PersonLifeEventvalidation" duration-ms="91508" started-at="2018-09-22T06:51:07Z" finished-at="2018-09-22T06:52:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PersonLifeEventvalidation -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.ProcessLifeEvent@343f7d6b]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-22T06:52:39Z" finished-at="2018-09-22T06:52:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PersonLifeEventvalidation status=SUCCESS method=ProcessLifeEvent.PersonLifeEventvalidation()[pri:0, instance:OCTS_USECASE_Employee.ProcessLifeEvent@343f7d6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- OCTS_USECASE_Employee.ProcessLifeEvent -->
-    </test> <!-- test-number-1 -->
-    <test name="test-number-2" duration-ms="46575" started-at="2018-09-22T06:52:39Z" finished-at="2018-09-22T06:53:25Z">
-      <class name="OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt@6ef18fa9]" name="setUp" is-config="true" duration-ms="377" started-at="2018-09-22T06:49:31Z" finished-at="2018-09-22T06:49:31Z">
+    <test name="test-number-1" duration-ms="255" started-at="2018-09-23T06:27:14Z" finished-at="2018-09-23T06:27:14Z">
+      <class name="OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@44213d52]" name="setUp" is-config="true" duration-ms="435" started-at="2018-09-23T06:24:52Z" finished-at="2018-09-23T06:24:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifybenefit()[pri:0, instance:OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt@6ef18fa9]" name="verifybenefit" duration-ms="46574" started-at="2018-09-22T06:52:39Z" finished-at="2018-09-22T06:53:25Z">
+        <test-method status="PASS" signature="scheduleAssignmentEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@44213d52]" name="scheduleAssignmentEmployeeValidation" duration-ms="250" started-at="2018-09-23T06:27:14Z" finished-at="2018-09-23T06:27:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifybenefit -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt@6ef18fa9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-22T06:53:25Z" finished-at="2018-09-22T06:53:25Z">
+        </test-method> <!-- scheduleAssignmentEmployeeValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@44213d52]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-23T06:27:14Z" finished-at="2018-09-23T06:27:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifybenefit status=SUCCESS method=VerifyBenftPlanEnrollmnt.verifybenefit()[pri:0, instance:OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt@6ef18fa9] output={null}]]]>
+                <![CDATA[[TestResult name=scheduleAssignmentEmployeeValidation status=SUCCESS method=ScheduleAssignmentEmployeeValidation.scheduleAssignmentEmployeeValidation()[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@44213d52] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt@6ef18fa9]" name="tearDown" is-config="true" duration-ms="410" started-at="2018-09-22T06:53:25Z" finished-at="2018-09-22T06:53:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation@44213d52]" name="tearDown" is-config="true" duration-ms="1247" started-at="2018-09-23T06:27:14Z" finished-at="2018-09-23T06:27:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- OCTS_USECASE_Employee.VerifyBenftPlanEnrollmnt -->
-    </test> <!-- test-number-2 -->
+      </class> <!-- OCTS_USECASE_Employee.ScheduleAssignmentEmployeeValidation -->
+    </test> <!-- test-number-1 -->
   </suite> <!-- Default Suite -->
 </testng-results>

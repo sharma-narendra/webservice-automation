@@ -92,7 +92,7 @@ public class FXMLController implements Initializable {
 	ProgressBar progressBar;
 
 	@FXML
-	TextArea outputTextScreen;
+	 TextArea outputTextScreen;
 
 	@FXML
 	ScrollPane outputScreen;

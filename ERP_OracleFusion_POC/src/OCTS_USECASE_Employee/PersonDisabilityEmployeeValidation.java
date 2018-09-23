@@ -86,7 +86,12 @@ public class PersonDisabilityEmployeeValidation extends ReporterBaseTest{
 		System.out.println(workerTestDataPath);
 		test=extent.createTest("Disability association with Employee Validation");
 		System.out.println("\n Disability association with Employee Validation \n");
-		empVal.getFirstAndLastName();
+		if(HCM_PersonDisability_Webservice_MainClass.personDisabilityStatus) {
+			empVal.getFirstAndLastName();
+			}else {
+				Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Disability not assigned to Employee successfully");
+			}
+		//empVal.getFirstAndLastName();
 	}
 
 	//Commenting the below code; if required to test this code alone then uncomment the code

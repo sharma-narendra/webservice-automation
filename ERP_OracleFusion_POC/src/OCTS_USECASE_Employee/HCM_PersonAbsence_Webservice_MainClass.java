@@ -48,6 +48,8 @@ import OCTS_Automation_Main_Modules.UnzipOutputFileGenerated;
 
 @SuppressWarnings("unused")
 public class HCM_PersonAbsence_Webservice_MainClass extends ReporterBaseTest {
+
+	public static Boolean personAbsenceStatus=false;
 	//String zipFilePath = "C:\\Automation_OCTS\\Output\\71963.zip";
 	public static String zipFilePath;
 	public static String HCMInputDataFile;
@@ -463,6 +465,7 @@ public class HCM_PersonAbsence_Webservice_MainClass extends ReporterBaseTest {
 								test.log(Status.FAIL,"Step 6: Load File to Interface Job resulted in Error, Check reason befor proceeding");
 								throw new Exception(resultgetImportandLoadStatus);
 							}else {
+								personAbsenceStatus=true;
 								test.log(Status.PASS, "Step 6: Importing and Loading Job Status Successful" );
 								   Logger.logInfo(HCM_PersonDisability_Webservice_MainClass.class,"Step 6: Load Import Job Status Successful" );
 							}

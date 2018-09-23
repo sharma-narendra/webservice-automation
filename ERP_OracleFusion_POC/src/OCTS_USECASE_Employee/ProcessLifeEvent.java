@@ -30,8 +30,8 @@ public void PersonLifeEventvalidation() {
 
 		ProcessLifeEvent Per = new ProcessLifeEvent();
 
-		test=extent.createTest("Person Life Event - Employee"+"\n");
-		System.out.println("\n Person Life Event "+"\n");
+		test=extent.createTest("Process Life Event - Employee"+"\n");
+		System.out.println("\n Process Life Event "+"\n");
 		Per.ProcessLifeEventMain();
 	}
 

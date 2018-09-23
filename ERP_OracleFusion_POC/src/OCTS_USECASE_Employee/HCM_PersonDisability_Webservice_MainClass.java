@@ -51,6 +51,7 @@ public class HCM_PersonDisability_Webservice_MainClass extends ReporterBaseTest 
 	//String zipFilePath = "C:\\Automation_OCTS\\Output\\71963.zip";
 	public static String zipFilePath;
 	public static String HCMInputDataFile;
+	public static Boolean personDisabilityStatus=false;
     static String destDir = "C:\\Automation_OCTS\\Output\\";
     public String resultgetImportandLoadStatus;
 	FileInputStream file = null;
@@ -141,6 +142,7 @@ public class HCM_PersonDisability_Webservice_MainClass extends ReporterBaseTest 
 		try{
 			//inputfile_fp = "C:\\Users\\koushik\\Documents\\Oracle Fusion\\ERP_InputDatasheet.XLSX";
 			//GIfile_fp = "C:\\Users\\koushik\\Documents\\Oracle Fusion\\GlInterface.zip";
+
 
 			inputfile_fp = "C:\\Automation_OCTS\\Data\\InputDataSheet\\HCM_PersonDisability_InputDatasheet.XLSX";
 			file_fp = "C:\\Automation_OCTS\\Data\\DAT\\PersonDisability.zip";
@@ -464,6 +466,7 @@ public class HCM_PersonDisability_Webservice_MainClass extends ReporterBaseTest 
 								test.log(Status.FAIL,"Step 6: Load File to Interface Job resulted in Error, Check reason befor proceeding");
 								throw new Exception(resultgetImportandLoadStatus);
 							}else {
+								personDisabilityStatus=true;
 								test.log(Status.PASS, "Step 6: Importing and Loading Job Status Successful" );
 								   Logger.logInfo(HCM_PersonDisability_Webservice_MainClass.class,"Step 6: Load Import Job Status Successful" );
 							}

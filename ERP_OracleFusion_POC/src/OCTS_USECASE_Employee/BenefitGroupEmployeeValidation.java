@@ -77,10 +77,15 @@ public class BenefitGroupEmployeeValidation extends ReporterBaseTest{
 	@Test
 	public void benefitGroupEmployeeValidation() {
 		BenefitGroupEmployeeValidation empVal = new BenefitGroupEmployeeValidation();
-		System.out.println(workerTestDataPath);
+		//System.out.println(workerTestDataPath);
 		test=extent.createTest("Benefit Group association with Employee Validation");
 		System.out.println("\n Benefit Group association with Employee Validation \n");
-		empVal.getFirstAndLastName();
+		if(HCM_BenefitGroup_Webservice_MainClass.benefitGroupStatus) {
+			empVal.getFirstAndLastName();
+			}else {
+				Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Benefit Group not assigned with Employee successfully");
+			}
+
 	}
 
 	//Commenting the below code; if required to test this code alone then uncomment the code

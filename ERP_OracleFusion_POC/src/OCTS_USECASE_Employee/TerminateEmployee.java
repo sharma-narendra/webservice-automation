@@ -97,8 +97,8 @@ public class TerminateEmployee extends ReporterBaseTest {
 	    System.setProperty("webdriver.chrome.driver","C:\\Automation_OCTS\\Driver\\chromedriver.exe");
 	    WebDriver driver = new ChromeDriver();
 
-			 Common_Utility.ReporterBaseTest.test.log(Status.INFO, "User Name :"+Username);
-			 Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Environment URL :" +URL);
+			// Common_Utility.ReporterBaseTest.test.log(Status.INFO, "User Name :"+Username);
+			// Common_Utility.ReporterBaseTest.test.log(Status.INFO, "Environment URL :" +URL);
 
 			 Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Application is Launched Successfully "+"\n");
 
@@ -326,7 +326,7 @@ public class TerminateEmployee extends ReporterBaseTest {
 
     	WebElement Okbtn = driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog')]"));
 
-    	Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee Terminated  successfully.."+"\n"+"\n");
+    	Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee : "+Pnum+" Terminated  successfully.."+"\n"+"\n");
     	Logger.logInfo(TerminateEmployee.class, "Employee Terminated  successfully...."+"\n"+"\n");
     	//WebElement Okbtn = driver.findElement(By.id("_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog"));
 
@@ -339,12 +339,12 @@ public class TerminateEmployee extends ReporterBaseTest {
     			Okbtn.click();
 
 	    		//driver.findElement(By.xpath("//*[starts-with(@id,'_FOpt1:_FOr1:0:_FONSr2:0:MAt2:1:r1:0:r1:0:pt1:ap1:tt1:okConfirmationDialog')]")).click();
-	 		Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee is terminated"+"\n");
+	 		Common_Utility.ReporterBaseTest.test.log(Status.PASS, "Employee "+Pnum+" is terminated"+"\n");
 	    	}
 
 	    	catch (Exception e) {
 
-         	Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Employee is not terminated"+"\n");
+         	Common_Utility.ReporterBaseTest.test.log(Status.FAIL, "Employee "+Pnum+" is not terminated"+"\n");
 	    	}
 
     	}
